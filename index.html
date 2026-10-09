@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaSenati - Instituto Superior</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+                <h2>EducaSenati</h2>
+                <span>Instituto Superior</span>
+            </div>
+        </div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#programas">Programas</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#registro" class="btn-reg">Regístrate</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Forma tu futuro<br>con educación de calidad</h1>
+                <p>Programas técnicos superiores diseñados para impulsar tu desarrollo profesional y personal.</p>
+                <div class="hero-buttons">
+                    <a href="#programas" class="btn-primary">Conoce nuestros programas</a>
+                    <a href="#contacto" class="btn-secondary">Contáctanos</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80" alt="Estudiantes EducaTech">
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="features" id="beneficios">
+        <h2>¿Por qué estudiar con nosotros?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon-box blue"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3>Educación de calidad</h3>
+                <p>Docentes especializados y programas actualizados.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box green"><i class="fa-solid fa-briefcase"></i></div>
+                <h3>Oportunidades reales</h3>
+                <p>Convenios con empresas y bolsa de trabajo.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box yellow"><i class="fa-solid fa-desktop"></i></div>
+                <h3>Modalidad flexible</h3>
+                <p>Estudia a tu ritmo con nuestros horarios flexibles.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box purple"><i class="fa-solid fa-users"></i></div>
+                <h3>Acompañamiento</h3>
+                <p>Te apoyamos en cada paso de tu formación.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Principal: Tarjetas desde Sheets + Formulario -->
+    <main class="main-content" id="programas">
+        <div class="content-wrapper">
+
+            <!-- Contenedor donde se insertarán las carreras automáticamente -->
+            <section class="programs-section">
+                <h2>Nuestros Programas</h2>
+                <div class="programs-grid" id="programs-container">
+                    <!-- Se cargará mediante JavaScript -->
+                </div>
+            </section>
+
+            <!-- Formulario Lateral -->
+            <aside class="sidebar-form" id="registro">
+                <h3>Regístrate ahora</h3>
+                <p>Déjanos tus datos y recibe información sobre nuestros programas.</p>
+                
+                <!-- Formulario con los IDs corregidos -->
+                <form id="form-registro">
+                    <div class="form-group">
+                        <label>Nombre completo</label>
+                        <input type="text" id="nombre" placeholder="Escribe tu nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Correo electrónico</label>
+                        <input type="email" id="correo" placeholder="Ej. correo@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="tel" id="telefono" placeholder="Escribe tu número de teléfono" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Programa de interés</label>
+                        <select id="select-carrera" required>
+                            <option value="" disabled selected>Selecciona un programa</option>
+                        </select>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="acepta" required>
+                        <label for="acepta">Acepto los <a href="#">términos y condiciones</a></label>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar registro</button>
+                </form>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col brand">
+                <div class="logo white">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div>
+                        <h3>EducaSenati</h3>
+                        <span>Instituto Superior</span>
+                    </div>
+                </div>
+                <p>Formamos profesionales técnicos con valores, capaces de transformar su entorno.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#programas">Programas</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#registro">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" id="contacto">
+                <h4>Contáctanos</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Av. Siempre Viva 123, Ciudad</p>
+                <p><i class="fa-solid fa-phone"></i> (01) 123 4567</p>
+                <p><i class="fa-solid fa-envelope"></i> info@educatech.edu.pe</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 EducaTech Instituto Superior. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
